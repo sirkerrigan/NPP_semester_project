@@ -1,0 +1,112 @@
+:root {
+  --gap: 16px;
+  --radius: 12px;
+  --shadow: 0 2px 6px rgba(0,0,0,.08);
+
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Inter, system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  padding: var(--gap);
+  line-height: 1.55;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.cell {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  border: 1px solid var(--border);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.cell:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
+}
+
+header, footer, nav { font-weight: 600; }
+header { font-size: 1.35rem; }
+footer { font-size: 1.05rem; color: var(--muted); }
+nav { font-size: 1.05rem; }
+
+p { margin: 0; font-size: 1.05rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 2px);
+  display: block;
+}
+
+/* cards */
+.card {
+  padding: 12px;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px dashed var(--border);
+}
+
+/* Классы по видам (если захочешь разные стили) */
+.cell.header { }
+.cell.footer { }
+.cell.nav    { }
+.cell.textblock { }
+.cell.card   { }
+.cell.image  { }
+
+/* Тёмная тема */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1020;
+    --surface: #121a2e;
+    --text: #e6edf3;
+    --muted: #97a6ba;
+    --border: #22304a;
+    --shadow: 0 2px 6px rgba(0,0,0,.4);
+  }
+}
+
+/* Небольшая адаптивность: на маленьких экранах делаем 6 колонок */
+@media (max-width: 720px) {
+  .row { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* Убираем лишние фокусы для кликабельных элементов внутри */
+a, button { outline: none; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 180px;
+  border-radius: calc(var(--radius) - 2px);
+  border: 2px dashed var(--border);
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .02em;
+}

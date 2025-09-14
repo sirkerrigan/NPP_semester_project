@@ -1,0 +1,20 @@
+cabal-version:      2.0
+name:               project
+version:            0.1.0.0
+license:            NONE
+build-type:         Simple
+
+executable project
+  main-is:             Main.hs
+  hs-source-dirs:      .
+  other-modules:       Parser, Layout, HtmlExport
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+
+  build-depends:
+      base >=4.18 && <5,
+      aeson,
+      bytestring,
+      text,
+      containers
+

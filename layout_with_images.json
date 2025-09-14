@@ -1,0 +1,88 @@
+{
+  "config": {
+    "gridCols": 12,
+    "balancePenalty": 2,
+    "raggedPenalty": 1,
+    "hardMaxRowHeight": 0,
+    "useBacktracking": true
+  },
+  "constraints": [
+    "HeaderAtTop",
+    "ImagesNeedTextNeighbor",
+    "FooterAtBottom"
+  ],
+  "components": [
+    {
+      "id": "hdr",
+      "kind": "header",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 140,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null,
+      "content": "Welcome to Our Page"
+    },
+    {
+      "id": "img1",
+      "kind": "image",
+      "minSpan": 4,
+      "prefSpan": 4,
+      "maxSpan": 6,
+      "prefHeight": 200,
+      "lockRow": false,
+      "adjacentToText": true,
+      "group": "intro",
+      "src": "images/team.jpg"
+    },
+    {
+      "id": "txt1",
+      "kind": "textBlock",
+      "minSpan": 8,
+      "prefSpan": 8,
+      "maxSpan": 8,
+      "prefHeight": 200,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "intro",
+      "content": "Our team is dedicated to providing the best services."
+    },
+    {
+      "id": "img2",
+      "kind": "image",
+      "minSpan": 6,
+      "prefSpan": 6,
+      "maxSpan": 6,
+      "prefHeight": 250,
+      "lockRow": false,
+      "adjacentToText": true,
+      "group": "feature",
+      "src": "images/product.jpg"
+    },
+    {
+      "id": "txt2",
+      "kind": "textBlock",
+      "minSpan": 6,
+      "prefSpan": 6,
+      "maxSpan": 6,
+      "prefHeight": 250,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "feature",
+      "content": "Check out our latest product!"
+    },
+    {
+      "id": "ftr",
+      "kind": "footer",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 120,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null,
+      "content": "Contact us: info@example.com"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "config": {
+    "gridCols": 12,
+    "balancePenalty": 3,
+    "raggedPenalty": 1,
+    "hardMaxRowHeight": 0,
+    "useBacktracking": true
+  },
+  "constraints": [
+    "HeaderAtTop",
+    "FooterAtBottom"
+  ],
+  "components": [
+    {
+      "id": "hdr",
+      "kind": "header",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 160,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null,
+      "content": "Photo Gallery"
+    },
+    {
+      "id": "imgA",
+      "kind": "image",
+      "minSpan": 4,
+      "prefSpan": 4,
+      "maxSpan": 4,
+      "prefHeight": 200,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "gallery",
+      "src": "images/gallery1.jpg"
+    },
+    {
+      "id": "imgB",
+      "kind": "image",
+      "minSpan": 4,
+      "prefSpan": 4,
+      "maxSpan": 4,
+      "prefHeight": 200,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "gallery",
+      "src": "images/gallery2.jpg"
+    },
+    {
+      "id": "imgC",
+      "kind": "image",
+      "minSpan": 4,
+      "prefSpan": 4,
+      "maxSpan": 4,
+      "prefHeight": 200,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "gallery",
+      "src": "images/gallery3.jpg"
+    },
+    {
+      "id": "txtGallery",
+      "kind": "textBlock",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 100,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null,
+      "content": "Enjoy our curated gallery showcasing the latest highlights."
+    },
+    {
+      "id": "card1",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 3,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "products",
+      "content": "Product 1"
+    },
+    {
+      "id": "card2",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 3,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "products",
+      "content": "Product 2"
+    },
+    {
+      "id": "card3",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 3,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "products",
+      "content": "Product 3"
+    },
+    {
+      "id": "card4",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 3,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "products",
+      "content": "Product 4"
+    },
+    {
+      "id": "ftr",
+      "kind": "footer",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 140,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null,
+      "content": "© 2025 Example Company"
+    }
+  ]
+}

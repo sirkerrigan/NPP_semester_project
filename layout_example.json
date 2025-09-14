@@ -1,0 +1,104 @@
+{
+  "config": {
+    "gridCols": 12,
+    "balancePenalty": 2,
+    "raggedPenalty": 1,
+    "hardMaxRowHeight": 0,
+    "useBacktracking": true
+  },
+  "constraints": [
+    "HeaderAtTop",
+    "ImagesNeedTextNeighbor",
+    "FooterAtBottom"
+  ],
+  "components": [
+    {
+      "id": "hdr",
+      "kind": "header",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 140,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null
+    },
+    {
+      "id": "nav",
+      "kind": "nav",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 60,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": null
+    },
+    {
+      "id": "img1",
+      "kind": "image",
+      "minSpan": 3,
+      "prefSpan": 4,
+      "maxSpan": 6,
+      "prefHeight": 260,
+      "lockRow": false,
+      "adjacentToText": true,
+      "group": "hero"
+    },
+    {
+      "id": "txt1",
+      "kind": "textBlock",
+      "minSpan": 4,
+      "prefSpan": 6,
+      "maxSpan": 8,
+      "prefHeight": 240,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": "hero"
+    },
+    {
+      "id": "cardA",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 4,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": null
+    },
+    {
+      "id": "cardB",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 4,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": null
+    },
+    {
+      "id": "cardC",
+      "kind": "card",
+      "minSpan": 3,
+      "prefSpan": 3,
+      "maxSpan": 4,
+      "prefHeight": 220,
+      "lockRow": false,
+      "adjacentToText": false,
+      "group": null
+    },
+    {
+      "id": "ftr",
+      "kind": "footer",
+      "minSpan": 12,
+      "prefSpan": 12,
+      "maxSpan": 12,
+      "prefHeight": 120,
+      "lockRow": true,
+      "adjacentToText": false,
+      "group": null
+    }
+  ]
+}
